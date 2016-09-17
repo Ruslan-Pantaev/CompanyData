@@ -99,12 +99,12 @@ int main()
 			cout << "Please enter a valid number! (USD): " <<endl;
 		}	
 
-		ordersTotal	 += total[i];
-		paidTotal	 += paid[i];
-		dueTotal	 = ordersTotal - paidTotal;
-		balance[i]	 = total[i] - paid[i];
-		averageTotal = paidTotal / (i + 1);
-		percentpaid	 = (paidTotal * 100) / ordersTotal;
+		ordersTotal	+= total[i];
+		paidTotal	+= paid[i];
+		dueTotal	= ordersTotal - paidTotal;
+		balance[i]	= total[i] - paid[i];
+		averageTotal	= paidTotal / (i + 1);
+		percentpaid	= (paidTotal * 100) / ordersTotal;
 
 		if (total[i] > paid[i]) {
 
